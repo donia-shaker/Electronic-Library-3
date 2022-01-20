@@ -106,7 +106,7 @@ header .container nav ul li img {
   height: 100vh;
   position: absolute;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   z-index: 5;
   align-items: center;
@@ -115,7 +115,7 @@ header .container nav ul li img {
 }
 .model-content iframe {
   width: 450px;
-  height: 700px;
+  height: 560px;
   background-color: white;
 }
 @media (max-width: 990px) {
@@ -164,7 +164,7 @@ header .search input {
   border-style: none;
   background-color: var(--second-color);
 }
-header .search i:nth-child(3) {
+header .search a i {
   font-size: 20px;
   width: 40px;
   height: 40px;

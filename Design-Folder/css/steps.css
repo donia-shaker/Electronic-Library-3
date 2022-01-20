@@ -1,0 +1,90 @@
+body {
+  position: relative;
+  overflow: hidden;
+}
+.container {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  position: relative;
+}
+.line {
+  height: 3px;
+  width: 80%;
+  position: absolute;
+  background-color: #999;
+  z-index: -1;
+}
+.line-2 {
+  width: 0%;
+  height: 100%;
+  background-color: rgb(0, 140, 255);
+}
+.circle {
+  background-color: white;
+  font-size: 24px;
+  border: 3px solid #999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
+.one,
+.active {
+  background-color: rgb(0, 140, 255);
+  color: white;
+  border-color: rgb(0, 140, 255);
+}
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  border: none;
+}
+
+/* iframe */
+iframe {
+  width: 100%;
+  height: 75vh;
+}
+
+/* stage 4 model */
+.model {
+  overflow: hidden;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.model-content {
+  width: 30%;
+  height: 40vh;
+}
+.model-content div {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.model h1 {
+  color: blue;
+}
+#btn {
+  margin: 20px auto;
+  direction: ltr;
+}

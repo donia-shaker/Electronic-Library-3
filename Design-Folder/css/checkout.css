@@ -1,0 +1,221 @@
+:root {
+  --main-color: #444;
+  --second-color: #777;
+}
+/* Start Global Element */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Ephesis", cursive;
+  font-family: "Source Serif Pro", serif;
+  position: relative;
+  direction: rtl;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  /* color: var(--main-color); */
+  cursor: pointer;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Element */
+/* start Checkout Section */
+section.checkout h1 {
+  color: var(--main-color);
+  margin: 0;
+  margin: 20px 0 10px;
+}
+section.checkout h1 span {
+  font-size: 20px;
+  margin-right: 5px;
+  color: var(--second-color);
+  font-weight: normal;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content .boxes {
+  color: var(--main-color);
+  width: 600px;
+}
+.content .boxes .box {
+  padding: 10px;
+  border: 2px solid #eee;
+  margin: 15px 0;
+}
+.content .boxes .box .top-part {
+  display: flex;
+}
+.box .bottom-part {
+  font-size: 18px;
+  font-weight: bold;
+  border-top: 2px solid #ddd;
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.box .bottom-part i {
+  margin-left: 5px;
+  font-size: 8px;
+}
+.content .boxes .box img {
+  margin: 0 20px;
+  width: 40px;
+  height: 50px;
+  position: relative;
+}
+.content .boxes .box .text {
+  margin-left: 20px;
+  width: 70%;
+}
+.content .boxes .box .text h2 {
+  margin: 5px 0;
+  font-size: 22px;
+}
+.content .boxes .box .text span {
+  font-style: italic;
+  font-size: 12px;
+  color: var(--second-color);
+  padding: 10px 0;
+}
+.content .boxes .box .text .note {
+  background-color: #fffce1;
+  border-right: 5px solid #ebc042;
+  padding: 10px;
+  margin: 10px 0;
+}
+.content .boxes .box .text .note span {
+  padding: 5px 0;
+  color: var(--main-color);
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+}
+/* end middel part */
+
+/* start third part */
+.content .boxes .box .cost .no {
+  color: #cc0f21;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.content .boxes .box .cost p span {
+  font-size: 14px;
+  font-weight: normal;
+}
+.content .boxes .box .cost .count {
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--second-color);
+}
+.content .boxes .box .cost .count span {
+  border-left: 2px solid #ccc;
+  height: 100%;
+  padding: 5px;
+}
+.content .boxes .box .cost .count p:first-child {
+  flex-grow: 2;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Start Aside Section */
+
+aside {
+  width: 400px;
+  border: 2px solid #eee;
+  padding: 20px;
+  height: fit-content;
+  margin-bottom: 10px;
+  margin: 15px;
+}
+aside .info {
+  display: flex;
+  justify-content: space-between;
+}
+aside .info p {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+aside .info span {
+  color: var(--second-color);
+  font-size: 12px;
+}
+aside .info .green {
+  color: green;
+  font-size: 20px;
+}
+aside .info h3,
+aside .info .red {
+  color: #cc0f21;
+  font-size: 24px;
+}
+aside .send p {
+  margin-top: 80px;
+  font-size: 16px;
+}
+aside .send p span {
+  color: blue;
+}
+aside a {
+  color: white;
+}
+aside .send button {
+  cursor: pointer;
+  background-color: #cc0f21;
+  color: white;
+  font-size: 24px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+/* End Aside Section */
+
+/* End Checkout Section */

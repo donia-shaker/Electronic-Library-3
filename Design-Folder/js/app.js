@@ -1,12 +1,20 @@
 // Login Logout Model
 const showModel = document.getElementById("show-model");
+const showModelSignout = document.getElementById("show-model-signup");
 const modelContainer = document.getElementById("model");
+const signup = document.getElementById("signup");
+
 modelContainer.style.visibility = "hidden";
 
 showModel.addEventListener("click", () => {
+  signup.setAttribute("src", "Pages/login.html");
+
   modelContainer.style.visibility = "visible";
 });
-
+showModelSignout.addEventListener("click", () => {
+  signup.setAttribute("src", "Pages/signup.html");
+  modelContainer.style.visibility = "visible";
+});
 modelContainer.addEventListener("click", () => {
   modelContainer.style.visibility = "hidden";
 });
