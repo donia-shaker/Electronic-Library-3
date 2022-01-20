@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../Design-Folder/css/all.min.css" />
+    <!-- CSS Normalized -->
+    <link rel="stylesheet" href="../Design-Folder/css/normalized.css" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../Design-Folder/css/category.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <nav>
+          <hr />
+          <i class="fas fa-bars first"></i>
+          <ul>
+            <li class="border">
+              <a>
+                <i class="fas fa-user"></i
+                ><a id="show-model"> ادخل لحسابك</a> او<a
+                  id="show-model-signup"
+                >
+                  سجل الان</a
+                >
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-star"></i>ألرئيسية</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-truck"></i>من نحن</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-shield-alt"></i>اتصل بنا</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-info-circle"></i>ألمسأعدة</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-map-marker-alt"></i>سيأسة ألخصوصية</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../Design-Folder/images/flag.png" alt="" />أليمن
+                YER</a
+              >
+            </li>
+            <li class="last">
+              <a href="#"><i class="fas fa-language"></i>Engish</a>
+            </li>
+          </ul>
+          <hr />
+        </nav>
+
+        <!-- end nav -->
+        <!-- start Search -->
+        <div class="search">
+          <img src="../Design-Folder/images/logo.PNG" alt="" />
+          <div class="input-search">
+            <input
+              type="search"
+              onkeyup="searchBook()"
+              placeholder="ابحث"
+              id="searchbar"
+            />
+            <i class="fas fa-search"></i>
+          </div>
+          <a href="checkout.html"><i class="fas fa-cart-plus"></i></a>
+        </div>
+        <!-- end search -->
+      </div>
+    </header>
+    <!-- end Header -->
+    <!-- add model -->
+    <div class="model" id="model">
+      <div class="model-content">
+        <iframe id="signup" src="" frameborder="0"></iframe>
+      </div>
+    </div>
+    <!-- Start Slider Section -->
+    <section class="slider">
+      <div class="container">
+        <div class="sliders">
+          <div id="slide-1" class="slide">
+            <img src="../Design-Folder/images/slide-1.jpg" alt="" />
+            <a href="#slide-7"><i class="fas fa-chevron-left"></i></a>
+            <a href="#slide-2"><i class="fas fa-chevron-right right"></i></a>
+          </div>
+          <div id="slide-2" class="slide">
+            <img src="../Design-Folder/images/slide-2.jpg" alt="" />
+            <a href="#slide-1"><i class="fas fa-chevron-left"></i></a>
+            <a href="#slide-3"><i class="fas fa-chevron-right right"></i></a>
+          </div>
+          <div id="slide-3" class="slide">
+            <img src="Design-Folder/images/slide-3.jpg" alt="" />
+            <a href="#slide-2"><i class="fas fa-chevron-left"></i></a>
+            <a href="#slide-4"><i class="fas fa-chevron-right right"></i></a>
+          </div>
+          <div id="slide-4" class="slide">
+            <img src="../Design-Folder/images/slide-1.jpg" alt="" />
+            <a href="#slide-3"><i class="fas fa-chevron-left"></i></a>
+            <a href="#slide-5"><i class="fas fa-chevron-right right"></i></a>
+          </div>
+          <div id="slide-5" class="slide">
+            <img src="../Design-Folder/images/slide-2.jpg" alt="" />
+            <a href="#slide-4"><i class="fas fa-chevron-left"></i></a>
+            <a href="#slide-6"><i class="fas fa-chevron-right right"></i></a>
+          </div>
+          <div id="slide-6" class="slide">
+            <img src="../Design-Folder/images/slide-3.jpg" alt="" />
+            <a href="#slide-5"><i class="fas fa-chevron-left"></i></a>
+            <a href="#slide-7"><i class="fas fa-chevron-right right"></i></a>
+          </div>
+          <div id="slide-7" class="slide">
+            <img src="../Design-Folder/images/slide-1.jpg" alt="" />
+            <a href="#slide-6"><i class="fas fa-chevron-left"></i></a>
+            <a href="#slide-1"><i class="fas fa-chevron-right right"></i></a>
+          </div>
+        </div>
+        <nav class="slider">
+          <a href="#slide-1"><i class="fas fa-square"></i></a>
+          <a href="#slide-2"><i class="fas fa-square"></i></a>
+          <a href="#slide-3"><i class="fas fa-square"></i></a>
+          <a href="#slide-4"><i class="fas fa-square"></i></a>
+          <a href="#slide-5"><i class="fas fa-square"></i></a>
+          <a href="#slide-6"><i class="fas fa-square"></i></a>
+          <a href="#slide-7"><i class="fas fa-square"></i></a>
+        </nav>
+      </div>
+    </section>
+    <!-- End Slider Section -->
+    <!-- Start Category Section -->
+    <section class="two">
+      <div class="container">
+        <aside>
+          <div class="links">
+            <a href="#"> الرئيسية</a> / <a href="#"> الكتب العربية </a> /
+            <a href="#"> الكتب الالكترونية</a>
+          </div>
+          <p class="two"><i class="fas fa-book-open"></i>كتب الكترونية</p>
+          <div class="box">
+            <h4>تصفية النتائح</h4>
+            <p>علامة تجارية<i class="far fa-minus-square"></i></p>
+            <p>السعر<i class="far fa-minus-square"></i></p>
+            <div>
+              <hr />
+              <span>ر.س.0</span> ر.س.105
+            </div>
+            <p>صبغة الكتاب<i class="far fa-minus-square"></i></p>
+          </div>
+        </aside>
+        <div class="books">
+          <div class="box book-hidden">
+            <img src="../Design-Folder/images/book-1.jpg" alt="" />
+            <div class="text">
+              <h3><i class="fas fa-book-open"></i>كتاب الكتروني</h3>
+              <p class="book">فن اللامبالاه(كتاب الكتروني)</p>
+              <span>29.89 ر.س</span>
+              <span class="two">شامل الضريبة</span>
+            </div>
+            <div class="icon">
+              <a href="#"><i class="fas fa-star"></i></a>
+              <a><i class="fas fa-cart-plus"></i></a>
+              <a></a>
+            </div>
+          </div>
+          <div class="box book-hidden">
+            <img src="../Design-Folder/images/book-1.jpg" alt="" />
+            <div class="text">
+              <h3><i class="fas fa-book-open"></i>كتاب الكتروني</h3>
+              <p class="book">ليتها تسال(كتاب الكتروني)</p>
+              <span>29.89 ر.س</span>
+              <span class="two">شامل الضريبة</span>
+            </div>
+            <div class="icon">
+              <a href="#"><i class="fas fa-star"></i></a>
+              <a><i class="fas fa-cart-plus"></i></a>
+              <a></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Category Section -->
+    <script src="../Design-Folder/js/category.js"></script>
+  </body>
+</html>
