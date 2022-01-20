@@ -324,7 +324,7 @@ section.two .container aside .box div span {
 }
 /* end aside part */
 .books {
-  display: grid;
+  display: flex;
 }
 .books .box {
   padding: 20px;
@@ -334,9 +334,6 @@ section.two .container aside .box div span {
   align-items: center;
   border: 2px solid #eee;
   width: fit-content;
-}
-.books .active {
-  visibility: hidden;
 }
 .books .box img {
   width: 150px;

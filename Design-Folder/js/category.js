@@ -14,3 +14,12 @@ function searchBook() {
     }
   }
 }
+
+// counter
+let counter = 0;
+
+function storageCounter() {
+  localStorage.setItem("counter", ++counter);
+  const spanCounter = document.getElementById("counter");
+  spanCounter.innerHTML = counter;
+}
