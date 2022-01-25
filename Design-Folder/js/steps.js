@@ -1,9 +1,10 @@
+// steps
 const nextBTN = document.getElementById("next-btn");
 const prevBTN = document.getElementById("prev-btn");
 const line = document.getElementById("line");
 const steps = document.querySelectorAll(".circle");
 
-let index = 0;
+let index = 1;
 nextBTN.addEventListener("click", () => {
   index++;
   if (index >= steps.length) {
@@ -14,8 +15,8 @@ nextBTN.addEventListener("click", () => {
 
 prevBTN.addEventListener("click", () => {
   index--;
-  if (index <= 0) {
-    index = 0;
+  if (index <= 1) {
+    index = 1;
   }
   changeState();
 });
@@ -38,13 +39,22 @@ function changeState() {
 
   if (index == 0 || index == 1) {
     pages.setAttribute("src", "stage-one.html");
+    nextBTN.innerHTML = "Next";
+    nextBTN.style.backgroundColor = "rgb(0, 140, 255)";
   } else if (index == 2) {
     pages.setAttribute("src", "stage-two.html");
+    nextBTN.innerHTML = "Next";
+    nextBTN.style.backgroundColor = "rgb(0, 140, 255)";
   } else if (index == 3) {
     pages.setAttribute("src", "stage-three.html");
+    nextBTN.innerHTML = "تأكيد";
+    nextBTN.style.backgroundColor = "#cc0f21";
   } else {
     modelContainer.style.visibility = "visible";
+    nextBTN.innerHTML = "Next";
+    nextBTN.style.backgroundColor = "rgb(0, 140, 255)";
   }
+
   const btn = document.getElementById("btn");
 
   modelContainer.addEventListener("click", () => {
