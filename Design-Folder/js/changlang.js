@@ -8,5 +8,6 @@ function changeLanguage() {
   } else {
     document.documentElement.style.setProperty("--text-align", "right");
     document.documentElement.style.setProperty("--direction", "rtl");
+    lable.innerHTML = "English ";
   }
 }
