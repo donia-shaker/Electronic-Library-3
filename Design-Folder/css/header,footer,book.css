@@ -1,6 +1,8 @@
 :root {
   --main-color: #66738b;
   --second-color: #eff2f7;
+  --text-align: right;
+  --direction: rtl;
 }
 /* Start Global Element */
 * {
@@ -15,7 +17,8 @@ html {
 }
 body {
   position: relative;
-  direction: rtl;
+  text-align: var(--text-align);
+  direction: var(--direction);
   background-color: #fff;
   overflow-x: hidden;
 }
