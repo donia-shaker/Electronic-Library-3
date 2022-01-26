@@ -55,15 +55,18 @@
               >
             </li>
             <li class="last">
-              <a>
-                <i class="fas fa-language"></i
-                ><input
+              <a href="">
+                <input
                   type="checkbox"
                   id="lang"
                   style="display: none"
-                  onclick="changeLanguage();"
-                /><label for="lang" id="changLan">English</label></a
-              >
+                  onclick="changeLanguage();" /><label
+                  for="lang"
+                  id="changLan"
+                  style="cursor: pointer"
+                  >English</label
+                ><i class="fas fa-language"></i
+              ></a>
             </li>
           </ul>
           <hr />
@@ -249,9 +252,9 @@
       <div class="container">
         <div class="line">
           <img src="Design-Folder/images/photo-1.jpg" alt="" />
-          <img src="Design-Folder/images/photo-3.png" alt="" />
+          <img src="Design-Folder/images/photo-3.jpg" alt="" />
           <img src="Design-Folder/images/photo-2.jpg" alt="" />
-          <img src="Design-Folder/images/slide-2.jpg" alt="" />
+          <img src="Design-Folder/images/photo-4.jpg" alt="" />
         </div>
         <img src="Design-Folder/images/slide-2.jpg" alt="" />
       </div>
@@ -265,7 +268,7 @@
         <div class="books">
           <i class="fas fa-chevron-right start"></i>
           <!-- Start Book One -->
-          <div class="box book-hidden">
+          <div class="box book-hidden" id="book-one">
             <a href="Pages/details.html"
               ><img
                 id="link-img"
@@ -292,7 +295,7 @@
           <!-- End Book One -->
 
           <!-- Start Book Two -->
-          <div class="box book-hidden">
+          <div class="box book-hidden" id="book-two">
             <a href="Pages/details.html"
               ><img src="Design-Folder/images/book-2.jpg" alt=""
             /></a>
@@ -317,7 +320,7 @@
           <!-- Start Book Two -->
 
           <!-- Start Book Three -->
-          <div class="box book-hidden">
+          <div class="box book-hidden" id="book-three">
             <a href="Pages/details.html"
               ><img src="Design-Folder/images/book3.jpg" alt=""
             /></a>
@@ -329,7 +332,7 @@
               </div>
               <span><span class="cost">19.99</span> ر.س</span>
               <span class="two">شامل الضريبة</span>
-              <p>صيغ اخرى <span>كتاب مطبوع </span></p>
+              <p class="last">صيغ اخرى <span>كتاب مطبوع </span></p>
             </div>
             <div class="icon">
               <a href="#"><i class="fas fa-star"></i></a>
@@ -342,7 +345,7 @@
           <!-- End Book Three -->
 
           <!-- Start Book Four -->
-          <div class="box book-hidden">
+          <div class="box book-hidden" id="book-four">
             <a href="Pages/details.html"
               ><img src="Design-Folder/images/book-4.jpg" alt=""
             /></a>
@@ -366,7 +369,7 @@
           <!-- End Book Four -->
 
           <!-- Start Book Five -->
-          <div class="box book-hidden">
+          <div class="box book-hidden" id="book-five">
             <a href="Pages/details.html"
               ><img src="Design-Folder/images/book-5.jpg" alt=""
             /></a>
@@ -431,6 +434,7 @@
             /></a>
             <div class="text">
               <h3><i class="fas fa-book-open"></i>كتاب الكتروني</h3>
+
               <p class="book">خلف قوتي ضعف يحبك(كتاب الكتروني)</p>
               <span><span class="cost">24.99</span> ر.س</span>
               <span class="two">شامل الضريبة</span>
@@ -455,7 +459,7 @@
               <p class="book">كتالوج الحب(كتاب الكتروني)</p>
               <span><span class="cost">19.99</span> ر.س</span>
               <span class="two">شامل الضريبة</span>
-              <p>صيغ اخرى <span>كتاب مطبوع </span></p>
+              <p class="last">صيغ اخرى <span>كتاب مطبوع </span></p>
             </div>
             <div class="icon">
               <a href="#"><i class="fas fa-star"></i></a>
@@ -577,7 +581,7 @@
               <p class="book">كتالوج الحب(كتاب الكتروني)</p>
               <span><span class="cost">19.99</span> ر.س</span>
               <span class="two">شامل الضريبة</span>
-              <p>صيغ اخرى <span>كتاب مطبوع </span></p>
+              <p class="last">صيغ اخرى <span>كتاب مطبوع </span></p>
             </div>
             <div class="icon">
               <a href="#"><i class="fas fa-star"></i></a>
@@ -699,7 +703,7 @@
               <p class="book">كتالوج الحب(كتاب الكتروني)</p>
               <span><span class="cost">19.99</span> ر.س</span>
               <span class="two">شامل الضريبة</span>
-              <p>صيغ اخرى <span>كتاب مطبوع </span></p>
+              <p class="last">صيغ اخرى <span>كتاب مطبوع </span></p>
             </div>
             <div class="icon">
               <a href="#"><i class="fas fa-star"></i></a>
@@ -821,7 +825,7 @@
               <p class="book">كتالوج الحب(كتاب الكتروني)</p>
               <span><span class="cost">19.99</span> ر.س</span>
               <span class="two">شامل الضريبة</span>
-              <p>صيغ اخرى <span>كتاب مطبوع </span></p>
+              <p class="last">صيغ اخرى <span>كتاب مطبوع </span></p>
             </div>
             <div class="icon">
               <a href="#"><i class="fas fa-star"></i></a>
@@ -943,7 +947,7 @@
               <p class="book">كتالوج الحب(كتاب الكتروني)</p>
               <span><span class="cost">19.99</span> ر.س</span>
               <span class="two">شامل الضريبة</span>
-              <p>صيغ اخرى <span>كتاب مطبوع </span></p>
+              <p class="last">صيغ اخرى <span>كتاب مطبوع </span></p>
             </div>
             <div class="icon">
               <a href="#"><i class="fas fa-star"></i></a>
@@ -1065,7 +1069,7 @@
               <p class="book">كتالوج الحب(كتاب الكتروني)</p>
               <span><span class="cost">19.99</span> ر.س</span>
               <span class="two">شامل الضريبة</span>
-              <p>صيغ اخرى <span>كتاب مطبوع </span></p>
+              <p class="last">صيغ اخرى <span>كتاب مطبوع </span></p>
             </div>
             <div class="icon">
               <a href="#"><i class="fas fa-star"></i></a>
@@ -1225,6 +1229,12 @@
       </div>
       <div class="copy-right">
         <div class="container">
+          <div class="first">
+            <img src="Design-Folder/images/footer-1.webp" alt="" />
+            <img src="Design-Folder/images/footer-2.webp" alt="" />
+            <img src="Design-Folder/images/footer-3.webp" alt="" />
+            <img src="Design-Folder/images/footer-4.webp" alt="" />
+          </div>
           <div class="text">
             <p>سياسة الخصوصية | شروط الخدمة</p>
             <p>

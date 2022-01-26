@@ -340,7 +340,8 @@ section.like-product .container .boxes {
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  overflow-x: auto;
 }
 section.like-product .container .boxes .box {
   box-shadow: 0px 1px 2px #bbb;
@@ -348,18 +349,12 @@ section.like-product .container .boxes .box {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
   padding: 10px;
-  width: 140px;
-  margin: 0 3px;
+  min-width: 140px;
+  margin: 10px;
   color: #444;
   font-weight: bold;
   text-align: center;
-}
-@media (max-width: 767px) {
-  section.like-product .container .boxes .box {
-    width: 100px;
-  }
 }
 section.like-product .container .boxes .box img {
   cursor: pointer;

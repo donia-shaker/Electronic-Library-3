@@ -35,29 +35,21 @@ function changeState() {
 
   // call pages to iframe
   const pages = document.getElementById("pages");
-  const modelContainer = document.getElementById("model");
+  const modelContainerStepe = document.getElementById("model-step-four");
 
   if (index == 0 || index == 1) {
     pages.setAttribute("src", "stage-one.html");
-    nextBTN.innerHTML = "Next";
-    nextBTN.style.backgroundColor = "rgb(0, 140, 255)";
+    nextBTN.innerHTML = "التالي";
+    nextBTN.style.backgroundColor = "#7a9dd8";
   } else if (index == 2) {
     pages.setAttribute("src", "stage-two.html");
-    nextBTN.innerHTML = "Next";
-    nextBTN.style.backgroundColor = "rgb(0, 140, 255)";
+    nextBTN.innerHTML = "التالي";
+    nextBTN.style.backgroundColor = "#7a9dd8";
   } else if (index == 3) {
     pages.setAttribute("src", "stage-three.html");
     nextBTN.innerHTML = "تأكيد";
     nextBTN.style.backgroundColor = "#cc0f21";
   } else {
-    modelContainer.style.visibility = "visible";
-    nextBTN.innerHTML = "Next";
-    nextBTN.style.backgroundColor = "rgb(0, 140, 255)";
+    modelContainerStepe.style.visibility = "visible";
   }
-
-  const btn = document.getElementById("btn");
-
-  modelContainer.addEventListener("click", () => {
-    modelContainer.style.visibility = "hidden";
-  });
 }

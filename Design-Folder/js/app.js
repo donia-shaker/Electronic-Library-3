@@ -21,7 +21,7 @@ modelContainer.addEventListener("click", () => {
 
 // Timer
 const countDown = () => {
-  const upperDateOne = new Date("Jan31, 2022,00:00:00").getTime();
+  const upperDateOne = new Date("Jan30, 2022,00:00:00").getTime();
   const upperDateTwo = new Date("Feb1, 2022,00:00:00").getTime();
   const upperDateThree = new Date("Feb2, 2022,00:00:00").getTime();
   const upperDateFour = new Date("Feb3, 2022,00:00:00").getTime();
@@ -66,5 +66,28 @@ const countDown = () => {
   thirdBook.innerHTML = remainDaysThree + "days";
   fourthBook.innerHTML = remainDaysFour + "days";
   fifthBook.innerHTML = remainDaysFive + "days";
+
+  // if the days == 0
+  let bookOne = document.getElementById("book-one");
+  let bookTwo = document.getElementById("book-two");
+  let bookThree = document.getElementById("book-three");
+  let bookFour = document.getElementById("book-four");
+  let bookFive = document.getElementById("book-five");
+
+  if (remainDaysOne == 0) {
+    bookOne.style.display = "none";
+  }
+  if (remainDaysTwo == 0) {
+    bookTwo.style.display = "none";
+  }
+  if (remainDaysThree == 0) {
+    bookThree.style.display = "none";
+  }
+  if (remainDaysFour == 0) {
+    bookFour.style.display = "none";
+  }
+  if (remainDaysFive == 0) {
+    bookFive.style.display = "none";
+  }
 };
 setInterval(countDown, 1000);
