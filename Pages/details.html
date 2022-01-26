@@ -92,54 +92,36 @@
     </div>
 
     <!-- Start Slider Section -->
-    <section class="slider">
+    <section class="slide-show">
       <div class="container">
-        <div class="sliders">
-          <div id="slide-1" class="slide">
-            <img src="../Design-Folder/images/slide-1.jpg" alt="" />
-            <a href="#slide-7"><i class="fas fa-chevron-left"></i></a>
-            <a href="#slide-2"><i class="fas fa-chevron-right right"></i></a>
-          </div>
-          <div id="slide-2" class="slide">
-            <img src="../Design-Folder/images/slide-2.jpg" alt="" />
-            <a href="#slide-1"><i class="fas fa-chevron-left"></i></a>
-            <a href="#slide-3"><i class="fas fa-chevron-right right"></i></a>
-          </div>
-          <div id="slide-3" class="slide">
-            <img src="../Design-Folder/images/slide-3.jpg" alt="" />
-            <a href="#slide-2"><i class="fas fa-chevron-left"></i></a>
-            <a href="#slide-4"><i class="fas fa-chevron-right right"></i></a>
-          </div>
-          <div id="slide-4" class="slide">
-            <img src="../Design-Folder/images/slide-1.jpg" alt="" />
-            <a href="#slide-3"><i class="fas fa-chevron-left"></i></a>
-            <a href="#slide-5"><i class="fas fa-chevron-right right"></i></a>
-          </div>
-          <div id="slide-5" class="slide">
-            <img src="../Design-Folder/images/slide-2.jpg" alt="" />
-            <a href="#slide-4"><i class="fas fa-chevron-left"></i></a>
-            <a href="#slide-6"><i class="fas fa-chevron-right right"></i></a>
-          </div>
-          <div id="slide-6" class="slide">
-            <img src="../Design-Folder/images/slide-3.jpg" alt="" />
-            <a href="#slide-5"><i class="fas fa-chevron-left"></i></a>
-            <a href="#slide-7"><i class="fas fa-chevron-right right"></i></a>
-          </div>
-          <div id="slide-7" class="slide">
-            <img src="../Design-Folder/images/slide-1.jpg" alt="" />
-            <a href="#slide-6"><i class="fas fa-chevron-left"></i></a>
-            <a href="#slide-1"><i class="fas fa-chevron-right right"></i></a>
-          </div>
+        <div class="slider">
+          <img src="../Design-Folder/images/slide-one.jpg" alt="" />
         </div>
-        <nav class="slider">
-          <a href="#slide-1"><i class="fas fa-square"></i></a>
-          <a href="#slide-2"><i class="fas fa-square"></i></a>
-          <a href="#slide-3"><i class="fas fa-square"></i></a>
-          <a href="#slide-4"><i class="fas fa-square"></i></a>
-          <a href="#slide-5"><i class="fas fa-square"></i></a>
-          <a href="#slide-6"><i class="fas fa-square"></i></a>
-          <a href="#slide-7"><i class="fas fa-square"></i></a>
-        </nav>
+        <div class="slider">
+          <img src="../Design-Folder/images/slide-two.jpg" alt="" />
+        </div>
+        <div class="slider">
+          <img src="../Design-Folder/images/slide-three.jpg" alt="" />
+        </div>
+        <div class="slider">
+          <img src="../Design-Folder/images/slide-four.jpg" alt="" />
+        </div>
+        <div class="slider">
+          <img src="../Design-Folder/images/slide-five.jpg" alt="" />
+        </div>
+        <a class="prev" onclick="plusSlides(1)"
+          ><i class="fas fa-chevron-left"></i
+        ></a>
+        <a class="next" onclick="plusSlides(-1)"
+          ><i class="fas fa-chevron-right"></i
+        ></a>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
       </div>
     </section>
     <!-- End Slider Section -->
@@ -528,5 +510,6 @@
     </footer>
     <!-- End Footer Section -->
     <script src="../Design-Folder/js/login&signout(for-category&details).js"></script>
+    <script src="../Design-Folder/js/slider.js"></script>
   </body>
 </html>

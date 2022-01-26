@@ -235,77 +235,83 @@ header .search a span {
 /* end header */
 
 /* Start Slider Section */
-section.slider .container {
+.slide-show .container {
   margin-top: 145px;
-  position: relative;
   margin-bottom: 50px;
-}
-section.slider .container .sliders {
-  overflow: hidden;
-  width: 100%;
-  height: 350px;
-}
-@media (max-width: 992px) {
-  section.slider .container .sliders {
-    height: 200px;
-  }
-  section.slider .container .sliders .slide a i {
-    font-size: 15px;
-  }
-}
-@media (max-width: 450px) {
-  section.slider .container .sliders {
-    height: 150px;
-  }
+  position: relative;
+  text-align: center;
 }
 @media (max-width: 767px) {
-  section.slider .container {
+  .slide-show .container {
     margin-top: 70px;
   }
 }
-section.slider .container .sliders .slide {
-  position: relative;
-  height: 100%;
+.slide-show .container .slider {
+  display: none;
 }
-section.slider .container .sliders .slide img {
+.slide-show .container img {
   width: 100%;
-  height: 100%;
-  display: inline;
 }
-section.slider .container .sliders .slide i {
+.slide-show .container .dots {
   position: absolute;
-  order: 2;
-  font-size: 40px;
-  top: 40%;
-  left: 3vw;
-  transform: translate(0, 50%);
-}
-section.slider .container .sliders .slide i.right {
-  right: 3vw;
-}
-/* start nav-slider */
-section.slider .container nav {
-  position: absolute;
-  bottom: 20px;
   left: 50%;
   transform: translate(-50%, 50%);
+  bottom: 18px;
 }
-section.slider .container nav a {
-  padding: 10px;
+.slide-show .container span.dot {
+  background-color: #9e9e9e;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border-radius: 2px;
+  display: inline-block;
 }
-section.slider .container nav a:hover i {
-  zoom: 1.2;
+@media (max-width: 767px) {
+  .slide-show .container span.dot {
+    height: 8px;
+    width: 8px;
+  }
+}
+/* Next & previous buttons */
+.slide-show .container a.prev,
+.slide-show .container a.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 12px;
   color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
-@media (max-width: 992px) {
-  section.slider .container nav i {
-    font-size: 10px;
-  }
-  section.slider .container nav a {
-    padding: 5px;
+@media (max-width: 767px) {
+  .slide-show .container a {
+    font-size: 16px;
   }
 }
-/* end nav-slider */
+/* Position the "next button" to the right */
+.slide-show .container .next {
+  right: 15px;
+}
+/* Position the "prev button" to the left */
+.slide-show .container a.prev {
+  left: 15px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #bbbbbb8c;
+  border-radius: 50%;
+}
+.active,
+.slide-show .container span.dot:hover,
+.slide-show .container span.dot.active {
+  background-color: white;
+}
+/* End Slider Section */
 
 /*  Start box style */
 .books {
@@ -317,7 +323,11 @@ section.slider .container nav a:hover i {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-
+@media (max-width: 767px) {
+  .books {
+    font-size: 14px;
+  }
+}
 .books i.end,
 .books i.start {
   font-size: 20px;

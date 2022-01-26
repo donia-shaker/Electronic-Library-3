@@ -6,9 +6,10 @@
   margin-bottom: 40px;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   color: #ccc;
+  overflow-x: auto;
 }
 .classification .container .box {
   width: 120px;
@@ -56,27 +57,16 @@ section.photo .line img {
     display: none;
   }
 }
-
 /* End Photo Section */
-/* Start Section Timer */
-/* section.timer h3 {
-  font-size: 30px;
-  display: inline;
-  margin-left: 20px;
+
+/* Books scroll */
+.timer .container .books,
+.one .container .books,
+.two .container .books,
+.three .container .books,
+.four .container .books,
+.five .container .books,
+.six .container .books {
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
-section.timer .header {
-  display: inline;
-  width: 600px;
-  display: flex;
-  align-items: center;
-}
-section.timer .header .counter-container {
-  border: 2px solid #333;
-  padding: 10px;
-  font-size: 25px;
-  direction: ltr;
-  width: 180px;
-  display: flex;
-  justify-content: space-between;
-} */
-/* End Section Timer */

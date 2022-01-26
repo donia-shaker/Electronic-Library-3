@@ -10,6 +10,11 @@ body {
   margin: 20px auto;
   position: relative;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 .line {
   height: 3px;
   width: 80%;
@@ -59,8 +64,8 @@ iframe {
 .model {
   overflow: hidden;
   width: 100vw;
-  height: 100%;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   top: 0;
   background-color: rgba(0, 0, 0, 0.87);
   display: flex;
@@ -70,7 +75,7 @@ iframe {
   visibility: hidden;
 }
 .model-content {
-  width: 30%;
+  width: 300px;
   height: 40vh;
 }
 .model-content div {
