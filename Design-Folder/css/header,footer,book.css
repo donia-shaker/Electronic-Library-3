@@ -21,6 +21,7 @@ body {
   direction: var(--direction);
   background-color: #fff;
   overflow-x: hidden;
+  font-family: "Tajawal", sans-serif;
 }
 ul {
   list-style: none;
@@ -226,10 +227,12 @@ header .search a i {
   margin-top: -20px;
 }
 header .search a span {
+  left: 10px;
   padding: 2px;
   position: relative;
-  top: -13px;
+  top: -8px;
   font-size: 18px;
+  border-radius: 20px;
 }
 /* end search */
 /* end header */
@@ -358,7 +361,7 @@ header .search a span {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 140px;
+  height: 160px;
   color: #444;
 }
 .books .box .text:first-child {
@@ -387,7 +390,7 @@ header .search a span {
 }
 .books .box .text p span {
   color: rgb(0, 119, 255);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   margin: 20px 0;
 }

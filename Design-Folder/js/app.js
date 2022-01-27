@@ -74,7 +74,7 @@ const countDown = () => {
   let bookFour = document.getElementById("book-four");
   let bookFive = document.getElementById("book-five");
 
-  if (remainDaysOne == 0) {
+  if ((remainDaysOne = 0)) {
     bookOne.style.display = "none";
   }
   if (remainDaysTwo == 0) {

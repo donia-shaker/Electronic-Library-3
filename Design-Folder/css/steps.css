@@ -93,6 +93,7 @@ section.stepe .model-step-four .model-content div {
 }
 section.stepe .model-step-four h1 {
   color: blue;
+  text-align: center;
 }
 section.stepe #btn {
   margin: 20px auto;
