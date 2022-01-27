@@ -18,7 +18,7 @@ function searchBook() {
 
 // counter
 // var counter = 0;
-if (localStorage.getItem("counter") == NaN) {
+if (localStorage.getItem("counter") === NaN) {
   var counter = 0;
 } else {
   var counter = localStorage.getItem("counter");
