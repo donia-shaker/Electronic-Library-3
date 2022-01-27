@@ -368,7 +368,7 @@ header .search a span {
   margin-left: 10px;
   color: #cc0f21;
 }
-.books .box .text p {
+.books .box .text a {
   color: var(--main-color);
   text-align: center;
   height: 100px;
@@ -406,7 +406,7 @@ header .search a span {
   color: #ddd;
 }
 .books .box .icon {
-  margin: 10px 0 20px;
+  margin: 20px 0;
   width: 100%;
   display: flex;
   justify-content: space-between;

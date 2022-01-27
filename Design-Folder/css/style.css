@@ -52,6 +52,13 @@ section.photo .line img {
 }
 /* End Photo Section */
 
+section .container .title {
+  display: flex;
+  justify-content: space-between;
+}
+section .container .title a {
+  color: blue;
+}
 /* Books scroll */
 .timer .container .books,
 .one .container .books,
