@@ -17,7 +17,20 @@ function searchBook() {
 }
 
 // counter
-let counter = 0;
+// var counter = 0;
+if (localStorage.getItem("counter") == NaN) {
+  var counter = 0;
+} else {
+  var counter = localStorage.getItem("counter");
+  const spanCounter = document.getElementById("counter");
+  const container = document.getElementById("count");
+  spanCounter.innerHTML = counter;
+  container.style.color = "white";
+  spanCounter.style.color = "white";
+  container.style.backgroundColor = "#cc0f21";
+  spanCounter.style.backgroundColor = "#cc0f21";
+}
+console.log(localStorage.getItem("counter"));
 
 function storageCounter() {
   localStorage.setItem("counter", ++counter);
